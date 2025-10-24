@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<!-- Define el idioma del contenido (español) -->
+
+<head>
+  <meta charset="UTF-8">
+  <!-- Define la codificación de caracteres (UTF-8 permite tildes, eñes, etc.) -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Hace que el diseño se adapte al ancho de la pantalla (importante para móviles) -->
+
+  <title>Servicios Técnicos</title>
+  <!-- Título que aparecerá en la pestaña del navegador -->
+</head>
+
+<body>
+  <!-- Todo el contenido visible de la página va dentro del <body> -->
+
+  <div class="container">
+    <!-- Contenedor principal que agrupa todo el contenido de la página -->
+
+    <div class="menu">
+      <!-- Sección lateral izquierda donde se mostrarán las opciones de servicios -->
+
+      <h2>Servicios Técnicos</h2>
+      <!-- Título del menú -->
+
+      <ul>
+        <!-- Lista que contiene las diferentes opciones de servicios -->
+        
+        <!-- Cada <li> representa una opción del menú.
+             El atributo onclick llama a una función JavaScript (showService)
+             que cambiará el contenido mostrado a la derecha -->
+        <li onclick="showService(0)">Reparación de Computadores</li>
+        <li onclick="showService(1)">Instalación de Software</li>
+        <li onclick="showService(2)">Mantenimiento Preventivo</li>
+        <li onclick="showService(3)">Redes y Conectividad</li>
+      </ul>
+    </div>
+
+    <div class="content" id="service-content">
+      <!-- Sección principal (lado derecho) donde aparecerá el contenido
+           del servicio seleccionado desde el menú -->
+      
+      <h3>Título del Servicio</h3>
+      <!-- Título que cambiará dinámicamente con JavaScript -->
+
+      <p>Descripción del servicio seleccionado aparecerá aquí.</p>
+      <!-- Texto descriptivo que también cambiará según la opción seleccionada -->
+    </div>
+
+  </div>
+  <!-- Fin del contenedor principal -->
+
+</body>
+</html>
